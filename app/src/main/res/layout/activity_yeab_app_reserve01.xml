@@ -32,7 +32,7 @@ yeab에서는 이 데이터를 개인정보로 취급합니다. 최대 2달동�
         android:id="@+id/t_personal2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:layout_marginLeft="10dp"
         android:textColorHint="@color/black"
         android:textSize="27dp"
@@ -53,7 +53,7 @@ yeab에서는 이 데이터를 개인정보로 취급합니다. 최대 2달동�
         android:id="@+id/cb_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:layout_marginLeft="4dp"
         android:text="위의 약관을 모두 동의함"/>
 

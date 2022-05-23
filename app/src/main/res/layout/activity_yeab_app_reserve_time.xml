@@ -12,7 +12,7 @@
         android:id="@+id/t_resWrite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="60dp"
         android:text="예약 시간 선택"
         android:textColor="@color/black"
         android:textSize="35dp" />
