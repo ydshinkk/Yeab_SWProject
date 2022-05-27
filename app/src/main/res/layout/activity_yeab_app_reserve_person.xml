@@ -6,80 +6,51 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    tools:context=".yeab_app_reserve_time">
+    tools:context=".yeab_app_reserve_person">
 
     <TextView
-        android:id="@+id/t_resChooseTime"
+        android:id="@+id/t_resChoosePerson"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:text="예약 시간 선택"
+        android:text="예약 인원 선택"
         android:textColor="@color/black"
         android:textSize="35dp" />
 
     <RadioButton
-        android:id="@+id/Rbtn_time1"
+        android:id="@+id/Rbtn_1person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="1명"
+        android:textColor="@color/black"
+        android:textSize="26dp"/>
+
+    <RadioButton
+        android:id="@+id/Rbtn_2person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="2명"
+        android:textColor="@color/black"
+        android:textSize="26dp"/>
+
+    <RadioButton
+        android:id="@+id/Rbtn_3person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="3명"
+        android:textColor="@color/black"
+        android:textSize="26dp"/>
+
+    <TextView
+        android:id="@+id/t_resChoosePersonWarning"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:text="A타임"
-        android:textColor="@color/black"
-        android:textSize="16dp"/>
-
-    <TextView
-        android:id="@+id/t_time1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="(11:30-12:00)"
-        android:textSize="17dp"/>
-
-    <RadioButton
-        android:id="@+id/Rbtn_time2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="B타임"
-        android:textColor="@color/black"
-        android:textSize="16dp"/>
-
-    <TextView
-        android:id="@+id/t_time2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="(12:00-12:30)"
-        android:textSize="17dp"/>
-
-    <RadioButton
-        android:id="@+id/Rbtn_time3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="C타임"
-        android:textColor="@color/black"
-        android:textSize="16dp"/>
-
-    <TextView
-        android:id="@+id/t_time3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="(12:30-13:00)"
-        android:textSize="17dp"/>
-
-    <RadioButton
-        android:id="@+id/Rbtn_time4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="D타임"
-        android:textColor="@color/black"
-        android:textSize="16dp"/>
-
-    <TextView
-        android:id="@+id/t_time4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="(13:00-13:30)"
-        android:textSize="17dp"/>
+        android:text="※ 예약 인원은 최대 3명까지 선택 가능합니다."
+        android:textSize="19dp" />
 
     <LinearLayout
         android:layout_width="wrap_content"
