@@ -19,6 +19,41 @@ public class yeab_app_reserve_resCodePrint extends AppCompatActivity {
         setContentView(R.layout.activity_yeab_app_reserve_res_code_print);
 
         intent = getIntent();
+        String rt_time_A = intent.getStringExtra("code_rt_time_A");
+        TextView t_resCodeTimeA = findViewById(R.id.t_resCodeTimeA);
+        t_resCodeTimeA.setText(rt_time_A);
+
+        intent = getIntent();
+        String rt_time_B = intent.getStringExtra("code_rt_time_B");
+        TextView t_resCodeTimeB = findViewById(R.id.t_resCodeTimeB);
+        t_resCodeTimeB.setText(rt_time_B);
+
+        intent = getIntent();
+        String rt_time_C = intent.getStringExtra("code_rt_time_C");
+        TextView t_resCodeTimeC = findViewById(R.id.t_resCodeTimeC);
+        t_resCodeTimeC.setText(rt_time_C);
+
+        intent = getIntent();
+        String rt_time_D = intent.getStringExtra("code_rt_time_D");
+        TextView t_resCodeTimeD = findViewById(R.id.t_resCodeTimeD);
+        t_resCodeTimeD.setText(rt_time_D);
+
+        intent = getIntent();
+        String rs_person1 = intent.getStringExtra("code_person1");
+        TextView t_resPerson1 = findViewById(R.id.t_resPerson1);
+        t_resPerson1.setText(rs_person1);
+
+        intent = getIntent();
+        String rs_person2 = intent.getStringExtra("code_person2");
+        TextView t_resPerson2 = findViewById(R.id.t_resPerson2);
+        t_resPerson2.setText(rs_person2);
+
+        intent = getIntent();
+        String rs_person3 = intent.getStringExtra("code_person3");
+        TextView t_resPerson3 = findViewById(R.id.t_resPerson3);
+        t_resPerson3.setText(rs_person3);
+
+        intent = getIntent();
         String seat_page1_1 = intent.getStringExtra("code_seat_page1_1");
         TextView t_printSeat_page1_1 = findViewById(R.id.t_printSeat_page1_1);
         t_printSeat_page1_1.setText(seat_page1_1);

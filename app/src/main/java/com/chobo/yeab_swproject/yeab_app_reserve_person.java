@@ -45,6 +45,8 @@ public class yeab_app_reserve_person extends AppCompatActivity {
             public void onClick(View v) {
                 intent = new Intent(yeab_app_reserve_person.this, yeab_app_reserve_seat_page1.class);
 
+                intent.putExtra("code_person1", "1");
+
                 if(rt_time_A != null){
                     intent.putExtra("code_rt_time_A", "A");
                 }
@@ -58,32 +60,6 @@ public class yeab_app_reserve_person extends AppCompatActivity {
                     intent.putExtra("code_rt_time_D", "D");
                 }
 
-                /*if("A" == t_resCodeTimeA.getText()){
-                    intent.putExtra("code_rt_time_A", "A");
-                }
-                else if("B" == t_resCodeTimeB.getText()){
-                    intent.putExtra("code_rt_time_B", "B");
-                }
-                else if("C" == t_resCodeTimeC.getText()){
-                    intent.putExtra("code_rt_time_C", "C");
-                }
-                else if("D" == t_resCodeTimeD.getText()){
-                    intent.putExtra("code_rt_time_D", "D");
-                }*/ // 오류 1
-
-                /*if(timeResA = true){
-                    intent.putExtra("code_rt_time_A", "A");
-                }
-                else if(timeResB = true){
-                    intent.putExtra("code_rt_time_B", "B");
-                }
-                else if(timeResC = true){
-                    intent.putExtra("code_rt_time_C", "C");
-                }
-                else {
-                    intent.putExtra("code_rt_time_D", "D");
-                }*/ // 오류 2
-
                 startActivity(intent);
             }
         });
@@ -92,7 +68,23 @@ public class yeab_app_reserve_person extends AppCompatActivity {
         btn_2person.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(yeab_app_reserve_person.this, yeab_app_reserve_seat_page2.class);
+                intent = new Intent(yeab_app_reserve_person.this, yeab_app_reserve_seat_page2.class);
+
+                intent.putExtra("code_person2", "2");
+
+                if(rt_time_A != null){
+                    intent.putExtra("code_rt_time_A", "A");
+                }
+                else if(rt_time_B != null){
+                    intent.putExtra("code_rt_time_B", "B");
+                }
+                else if(rt_time_C != null){
+                    intent.putExtra("code_rt_time_C", "C");
+                }
+                else if(rt_time_D != null){
+                    intent.putExtra("code_rt_time_D", "D");
+                }
+
                 startActivity(intent);
             }
         });
@@ -101,7 +93,23 @@ public class yeab_app_reserve_person extends AppCompatActivity {
         btn_3person.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(yeab_app_reserve_person.this, yeab_app_reserve_seat_page3.class);
+                intent = new Intent(yeab_app_reserve_person.this, yeab_app_reserve_seat_page3.class);
+
+                intent.putExtra("code_person3", "3");
+
+                if(rt_time_A != null){
+                    intent.putExtra("code_rt_time_A", "A");
+                }
+                else if(rt_time_B != null){
+                    intent.putExtra("code_rt_time_B", "B");
+                }
+                else if(rt_time_C != null){
+                    intent.putExtra("code_rt_time_C", "C");
+                }
+                else if(rt_time_D != null){
+                    intent.putExtra("code_rt_time_D", "D");
+                }
+
                 startActivity(intent);
             }
         });
