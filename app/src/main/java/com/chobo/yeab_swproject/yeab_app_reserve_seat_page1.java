@@ -31,6 +31,21 @@ public class yeab_app_reserve_seat_page1 extends yeab_app_reserve_person {
         TextView t_resCodeTimeA = (TextView) findViewById(R.id.t_resCodeTimeA);
         t_resCodeTimeA.setText(rt_time_A);
 
+        intent = getIntent();
+        String rt_time_B = intent.getStringExtra("code_rt_time_B");
+        TextView t_resCodeTimeB = (TextView) findViewById(R.id.t_resCodeTimeB);
+        t_resCodeTimeB.setText(rt_time_B);
+
+        intent = getIntent();
+        String rt_time_C = intent.getStringExtra("code_rt_time_C");
+        TextView t_resCodeTimeC = (TextView) findViewById(R.id.t_resCodeTimeC);
+        t_resCodeTimeC.setText(rt_time_C);
+
+        intent = getIntent();
+        String rt_time_D = intent.getStringExtra("code_rt_time_D");
+        TextView t_resCodeTimeD = (TextView) findViewById(R.id.t_resCodeTimeD);
+        t_resCodeTimeD.setText(rt_time_D);
+
         btn_seat1 = findViewById(R.id.btn_seat1);
         btn_seat1.setOnClickListener(new View.OnClickListener() {
             @Override

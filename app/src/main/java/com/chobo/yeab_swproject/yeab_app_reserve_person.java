@@ -10,8 +10,8 @@ import android.widget.TextView;
 
 public class yeab_app_reserve_person extends AppCompatActivity {
 
+    boolean timeResA, timeResB, timeResC, timeResD;
     Intent intent;
-    String rp_resTimeA, rp_resTimeB, rp_resTimeC, rp_resTimeD;
     RadioButton Rbtn_1person, Rbtn_2person, Rbtn_3person;
 
     @Override
@@ -43,8 +43,19 @@ public class yeab_app_reserve_person extends AppCompatActivity {
         Rbtn_1person.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(yeab_app_reserve_person.this, yeab_app_reserve_seat_page1.class);
-                intent.putExtra("code_rt_time_A", "A");
+                intent = new Intent(yeab_app_reserve_person.this, yeab_app_reserve_seat_page1.class);
+                if(timeResA = false){
+                    intent.putExtra("code_rt_time_A", "A");
+                }
+                if(timeResB = false){
+                    intent.putExtra("code_rt_time_B", "B");
+                }
+                if(timeResC = false){
+                    intent.putExtra("code_rt_time_C", "C");
+                }
+                if(timeResD = false){
+                    intent.putExtra("code_rt_time_D", "D");
+                }
                 startActivity(intent);
             }
         });
