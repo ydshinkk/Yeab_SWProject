@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-public class yeab_app_reserve_seat_page1 extends AppCompatActivity {
+public class yeab_app_reserve_seat_page1 extends yeab_app_reserve_person {
 
     Intent intent;
     Button btn_seat1, btn_seat2, btn_seat3, btn_seat4;
@@ -25,6 +25,11 @@ public class yeab_app_reserve_seat_page1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_yeab_app_reserve_seat_page1);
+
+        intent = getIntent();
+        String rt_time_A = intent.getStringExtra("code_rt_time_A");
+        TextView t_resCodeTimeA = (TextView) findViewById(R.id.t_resCodeTimeA);
+        t_resCodeTimeA.setText(rt_time_A);
 
         btn_seat1 = findViewById(R.id.btn_seat1);
         btn_seat1.setOnClickListener(new View.OnClickListener() {

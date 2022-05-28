@@ -17,72 +17,76 @@
         android:textColor="@color/black"
         android:textSize="35dp" />
 
-    <RadioButton
-        android:id="@+id/Rbtn_time1"
+    <Button
+        android:id="@+id/btn_timeA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:text="A타임"
+        android:backgroundTint="#FFFFFF"
         android:textColor="@color/black"
-        android:textSize="16dp"/>
+        android:text="○ A타임"
+        android:textSize="18dp" />
 
     <TextView
-        android:id="@+id/t_time1"
+        android:id="@+id/t_timeA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="(11:30-12:00)"
         android:textSize="17dp"/>
 
-    <RadioButton
-        android:id="@+id/Rbtn_time2"
+    <Button
+        android:id="@+id/btn_timeB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:text="B타임"
+        android:backgroundTint="#FFFFFF"
         android:textColor="@color/black"
-        android:textSize="16dp"/>
+        android:text="○ B타임"
+        android:textSize="18dp" />
 
     <TextView
-        android:id="@+id/t_time2"
+        android:id="@+id/t_timeB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="(12:00-12:30)"
         android:textSize="17dp"/>
 
-    <RadioButton
-        android:id="@+id/Rbtn_time3"
+    <Button
+        android:id="@+id/btn_timeC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:text="C타임"
+        android:backgroundTint="#FFFFFF"
         android:textColor="@color/black"
-        android:textSize="16dp"/>
+        android:text="○ C타임"
+        android:textSize="18dp" />
 
     <TextView
-        android:id="@+id/t_time3"
+        android:id="@+id/t_timeC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="(12:30-13:00)"
         android:textSize="17dp"/>
 
-    <RadioButton
-        android:id="@+id/Rbtn_time4"
+    <Button
+        android:id="@+id/btn_timeD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:text="D타임"
+        android:backgroundTint="#FFFFFF"
         android:textColor="@color/black"
-        android:textSize="16dp"/>
+        android:text="○ D타임"
+        android:textSize="18dp" />
 
     <TextView
-        android:id="@+id/t_time4"
+        android:id="@+id/t_timeD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="(13:00-13:30)"
         android:textSize="17dp"/>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="50dp">
@@ -91,14 +95,8 @@
             android:id="@+id/Ibtn_before"
             android:layout_width="55dp"
             android:layout_height="51dp"
+            android:layout_marginLeft="30dp"
             app:srcCompat="@android:drawable/ic_media_previous"/>
-
-        <ImageButton
-            android:id="@+id/Ibtn_next"
-            android:layout_width="55dp"
-            android:layout_height="51dp"
-            android:layout_marginLeft="200dp"
-            app:srcCompat="@android:drawable/ic_media_play"/>
 
     </LinearLayout>
 
