@@ -17,30 +17,33 @@
         android:textColor="@color/black"
         android:textSize="35dp" />
 
-    <RadioButton
-        android:id="@+id/Rbtn_1person"
+    <Button
+        android:id="@+id/btn_1person"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
-        android:text="1명"
+        android:text="○ 1명"
+        android:backgroundTint="@color/white"
         android:textColor="@color/black"
         android:textSize="26dp"/>
 
-    <RadioButton
-        android:id="@+id/Rbtn_2person"
+    <Button
+        android:id="@+id/btn_2person"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="2명"
+        android:text="○ 2명"
+        android:backgroundTint="@color/white"
         android:textColor="@color/black"
         android:textSize="26dp"/>
 
-    <RadioButton
-        android:id="@+id/Rbtn_3person"
+    <Button
+        android:id="@+id/btn_3person"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="3명"
+        android:text="○ 3명"
+        android:backgroundTint="@color/white"
         android:textColor="@color/black"
         android:textSize="26dp"/>
 

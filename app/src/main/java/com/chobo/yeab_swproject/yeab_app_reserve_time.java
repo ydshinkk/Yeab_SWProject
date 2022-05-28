@@ -13,7 +13,7 @@ public class yeab_app_reserve_time extends AppCompatActivity {
 
     public Boolean timeResA, timeResB, timeResC, timeResD = false;
     Intent intent;
-    Button btn_timeA, btn_timeB, btn_timeC, btn_timeD;
+    public Button btn_timeA, btn_timeB, btn_timeC, btn_timeD;
     ImageButton Ibtn_before;
 
     @Override
@@ -29,7 +29,6 @@ public class yeab_app_reserve_time extends AppCompatActivity {
                     intent = new Intent(yeab_app_reserve_time.this, yeab_app_reserve_person.class);
                     intent.putExtra("code_rt_time_A", "A");
                     startActivity(intent);
-                    timeResA = false;
                 }
             }
         });
@@ -42,7 +41,6 @@ public class yeab_app_reserve_time extends AppCompatActivity {
                     intent = new Intent(yeab_app_reserve_time.this, yeab_app_reserve_person.class);
                     intent.putExtra("code_rt_time_B", "B");
                     startActivity(intent);
-                    timeResB = false;
                 }
             }
         });
@@ -55,7 +53,6 @@ public class yeab_app_reserve_time extends AppCompatActivity {
                     intent = new Intent(yeab_app_reserve_time.this, yeab_app_reserve_person.class);
                     intent.putExtra("code_rt_time_C", "C");
                     startActivity(intent);
-                    timeResC = false;
                 }
             }
         });
@@ -68,7 +65,6 @@ public class yeab_app_reserve_time extends AppCompatActivity {
                     intent = new Intent(yeab_app_reserve_time.this, yeab_app_reserve_person.class);
                     intent.putExtra("code_rt_time_D", "D");
                     startActivity(intent);
-                    timeResD = false;
                 }
             }
         });

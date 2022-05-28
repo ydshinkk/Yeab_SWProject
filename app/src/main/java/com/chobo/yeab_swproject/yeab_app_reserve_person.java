@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
@@ -12,7 +13,7 @@ public class yeab_app_reserve_person extends AppCompatActivity {
 
     boolean timeResA, timeResB, timeResC, timeResD;
     Intent intent;
-    RadioButton Rbtn_1person, Rbtn_2person, Rbtn_3person;
+    Button btn_1person, btn_2person, btn_3person;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,29 +40,33 @@ public class yeab_app_reserve_person extends AppCompatActivity {
         TextView t_resCodeTimeD = (TextView) findViewById(R.id.t_resCodeTimeD);
         t_resCodeTimeD.setText(rt_time_D);
 
-        Rbtn_1person = findViewById(R.id.Rbtn_1person);
-        Rbtn_1person.setOnClickListener(new View.OnClickListener() {
+        btn_1person = findViewById(R.id.btn_1person);
+        btn_1person.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 intent = new Intent(yeab_app_reserve_person.this, yeab_app_reserve_seat_page1.class);
-                if(timeResA = false){
+                /*if (v.getId() == R.id.btn_timeA){
                     intent.putExtra("code_rt_time_A", "A");
                 }
-                if(timeResB = false){
+                /*if(timeResA = true){
+                    intent.putExtra("code_rt_time_A", "A");
+                }
+                if(timeResB = true){
                     intent.putExtra("code_rt_time_B", "B");
                 }
-                if(timeResC = false){
+                if(timeResC = true){
                     intent.putExtra("code_rt_time_C", "C");
                 }
-                if(timeResD = false){
+                if(timeResD = true){
                     intent.putExtra("code_rt_time_D", "D");
-                }
+                }*/
                 startActivity(intent);
             }
+
         });
 
-        Rbtn_2person = findViewById(R.id.Rbtn_2person);
-        Rbtn_2person.setOnClickListener(new View.OnClickListener() {
+        btn_2person = findViewById(R.id.btn_2person);
+        btn_2person.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(yeab_app_reserve_person.this, yeab_app_reserve_seat_page2.class);
@@ -69,8 +74,8 @@ public class yeab_app_reserve_person extends AppCompatActivity {
             }
         });
 
-        Rbtn_3person = findViewById(R.id.Rbtn_3person);
-        Rbtn_3person.setOnClickListener(new View.OnClickListener() {
+        btn_3person = findViewById(R.id.btn_3person);
+        btn_3person.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(yeab_app_reserve_person.this, yeab_app_reserve_seat_page3.class);

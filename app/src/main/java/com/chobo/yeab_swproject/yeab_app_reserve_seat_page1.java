@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-public class yeab_app_reserve_seat_page1 extends yeab_app_reserve_person {
+public class yeab_app_reserve_seat_page1 extends AppCompatActivity {
 
     Intent intent;
     Button btn_seat1, btn_seat2, btn_seat3, btn_seat4;
