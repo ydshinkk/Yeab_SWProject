@@ -31,33 +31,42 @@ public class yeab_app_reserve_02 extends AppCompatActivity {
         Ibtn_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(yeab_app_reserve_02.this, yeab_app_reserve_time.class);
-                startActivity(intent);
+
                 // 전화번호 String으로 저장
                 String getEdit = et_phoneNumber.getText().toString().trim();
                 // 공백이 있거나, 특수문자가 있거나, 11자리가 아닌 경우 값 안받고 Toast로 안내창 띄움 - https://kkh0977.tistory.com/53 특수문자 확인하는 코드 출처
                 String getArrayList;
                 ArrayList<Character> arrayList = new ArrayList<>();
-                if (getEdit.getBytes().length < 11 || getEdit.getBytes().length > 11) {
+
+                boolean x;
+                int i;
+                if ((getEdit.getBytes().length < 11 || getEdit.getBytes().length > 11)) {
                     Toast.makeText(yeab_app_reserve_02.this, "숫자로만 11자리 입력해야 합니다.", Toast.LENGTH_SHORT).show();
-                    return;
-                } else {
-                    for (int i = 0; i < getEdit.length(); i++) {
+                    x=false;
+                    return;}
+                if(x=true) {
+                    for (i = 0; i < getEdit.length(); i++) {
                         if (String.valueOf(getEdit.charAt(i)).matches("[^a-zA-Z0-9\\s]")) { //특수문자 아닌 경우 배열에 저장
                             Toast.makeText(yeab_app_reserve_02.this, "공백, 특수문자는 입력 불가합니다.", Toast.LENGTH_SHORT).show();
                             return;
                         } else {
+                            //배열 값 가져와서 스트링으로 만들기
+                            getArrayList = arrayList.toString();
+                            //배열 스트링 한 값 해싱
+                            String hashingPhoneNum = hashing(getArrayList);
+                            //inputUserInfo(hashingPhoneNum);
+                            //입력 성공 출력 Toast
+                            Toast.makeText(yeab_app_reserve_02.this, "입력 성공", Toast.LENGTH_SHORT).show();
                             arrayList.add(getEdit.charAt(i));
+                            Intent intent = new Intent(yeab_app_reserve_02.this, yeab_app_reserve_time.class);
+                            startActivity(intent);
                         }
                     }
                 }
-                //배열 값 가져와서 스트링으로 만들기
-                getArrayList = arrayList.toString();
-                //배열 스트링 한 값 해싱
-                String hashingPhoneNum = hashing(getArrayList);
-                //inputUserInfo(hashingPhoneNum);
-                //입력 성공 출력 Toast
-                Toast.makeText(yeab_app_reserve_02.this, "입력 성공", Toast.LENGTH_SHORT).show();
+
+
+
+
             }
         });
 

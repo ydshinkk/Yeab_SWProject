@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.RadioButton;
 
 public class yeab_app_reserve_time extends AppCompatActivity {
 
@@ -22,6 +21,7 @@ public class yeab_app_reserve_time extends AppCompatActivity {
         Ibtn_before.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                finish();
                 Intent intent = new Intent(yeab_app_reserve_time.this, yeab_app_reserve_02.class);
                 startActivity(intent);
             }
@@ -31,7 +31,7 @@ public class yeab_app_reserve_time extends AppCompatActivity {
         Ibtn_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(yeab_app_reserve_time.this, yeab_app_reserve_seat.class);
+                Intent intent = new Intent(yeab_app_reserve_time.this, yeab_app_reserve_person.class);
                 startActivity(intent);
             }
         });

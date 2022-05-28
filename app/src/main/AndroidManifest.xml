@@ -14,13 +14,19 @@
         android:theme="@style/Theme.Yeab_SWProject"
         tools:targetApi="31">
         <activity
+            android:name=".yeab_app_reserve_seat_page3"
+            android:exported="false" />
+        <activity
+            android:name=".yeab_app_reserve_seat_page2"
+            android:exported="false" />
+        <activity
             android:name=".yeab_app_reserve_person"
             android:exported="false" />
         <activity
             android:name=".yeab_app_reserve_resCodePrint"
             android:exported="false" />
         <activity
-            android:name=".yeab_app_reserve_seat"
+            android:name=".yeab_app_reserve_seat_page1"
             android:exported="false" />
         <activity
             android:name=".yeab_app_reserve_time"
