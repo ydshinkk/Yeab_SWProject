@@ -5,13 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.textclassifier.SelectionEvent;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.RadioButton;
 
 public class yeab_app_reserve_time extends AppCompatActivity {
 
-    public Boolean timeResA, timeResB, timeResC, timeResD = false;
     Intent intent;
     public Button btn_timeA, btn_timeB, btn_timeC, btn_timeD;
     ImageButton Ibtn_before;
@@ -25,12 +25,9 @@ public class yeab_app_reserve_time extends AppCompatActivity {
         btn_timeA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (timeResA = true) {
-                    intent = new Intent(yeab_app_reserve_time.this, yeab_app_reserve_person.class);
-                    intent.putExtra("code_rt_time_A", "A");
-                    startActivity(intent);
-                    timeResA = false;
-                }
+                intent = new Intent(yeab_app_reserve_time.this, yeab_app_reserve_person.class);
+                intent.putExtra("code_rt_time_A", "A");
+                startActivity(intent);
             }
         });
 
@@ -38,12 +35,9 @@ public class yeab_app_reserve_time extends AppCompatActivity {
         btn_timeB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(timeResB = true){
-                    intent = new Intent(yeab_app_reserve_time.this, yeab_app_reserve_person.class);
-                    intent.putExtra("code_rt_time_B", "B");
-                    startActivity(intent);
-                    timeResB = false;
-                }
+                intent = new Intent(yeab_app_reserve_time.this, yeab_app_reserve_person.class);
+                intent.putExtra("code_rt_time_B", "B");
+                startActivity(intent);
             }
         });
 
@@ -51,12 +45,9 @@ public class yeab_app_reserve_time extends AppCompatActivity {
         btn_timeC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(timeResC = true){
-                    intent = new Intent(yeab_app_reserve_time.this, yeab_app_reserve_person.class);
-                    intent.putExtra("code_rt_time_C", "C");
-                    startActivity(intent);
-                    timeResC = false;
-                }
+                intent = new Intent(yeab_app_reserve_time.this, yeab_app_reserve_person.class);
+                intent.putExtra("code_rt_time_C", "C");
+                startActivity(intent);
             }
         });
 
@@ -64,12 +55,9 @@ public class yeab_app_reserve_time extends AppCompatActivity {
         btn_timeD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(timeResD = true){
-                    intent = new Intent(yeab_app_reserve_time.this, yeab_app_reserve_person.class);
-                    intent.putExtra("code_rt_time_D", "D");
-                    startActivity(intent);
-                    timeResD = false;
-                }
+                intent = new Intent(yeab_app_reserve_time.this, yeab_app_reserve_person.class);
+                intent.putExtra("code_rt_time_D", "D");
+                startActivity(intent);
             }
         });
 
@@ -78,7 +66,7 @@ public class yeab_app_reserve_time extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 finish();
-                Intent intent = new Intent(yeab_app_reserve_time.this, yeab_app_reserve_02.class);
+                intent = new Intent(yeab_app_reserve_time.this, yeab_app_reserve_02.class);
                 startActivity(intent);
             }
         });

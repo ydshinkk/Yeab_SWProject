@@ -11,8 +11,6 @@ import android.widget.TextView;
 
 public class yeab_app_reserve_person extends AppCompatActivity {
 
-    String testA = "A";
-    boolean timeResA, timeResB, timeResC, timeResD;
     Intent intent;
     Button btn_1person, btn_2person, btn_3person;
 
@@ -23,22 +21,22 @@ public class yeab_app_reserve_person extends AppCompatActivity {
 
         intent = getIntent();
         String rt_time_A = intent.getStringExtra("code_rt_time_A");
-        TextView t_resCodeTimeA = (TextView) findViewById(R.id.t_resCodeTimeA);
+        TextView t_resCodeTimeA = findViewById(R.id.t_resCodeTimeA);
         t_resCodeTimeA.setText(rt_time_A);
 
         intent = getIntent();
         String rt_time_B = intent.getStringExtra("code_rt_time_B");
-        TextView t_resCodeTimeB = (TextView) findViewById(R.id.t_resCodeTimeB);
+        TextView t_resCodeTimeB = findViewById(R.id.t_resCodeTimeB);
         t_resCodeTimeB.setText(rt_time_B);
 
         intent = getIntent();
         String rt_time_C = intent.getStringExtra("code_rt_time_C");
-        TextView t_resCodeTimeC = (TextView) findViewById(R.id.t_resCodeTimeC);
+        TextView t_resCodeTimeC = findViewById(R.id.t_resCodeTimeC);
         t_resCodeTimeC.setText(rt_time_C);
 
         intent = getIntent();
         String rt_time_D = intent.getStringExtra("code_rt_time_D");
-        TextView t_resCodeTimeD = (TextView) findViewById(R.id.t_resCodeTimeD);
+        TextView t_resCodeTimeD = findViewById(R.id.t_resCodeTimeD);
         t_resCodeTimeD.setText(rt_time_D);
 
         btn_1person = findViewById(R.id.btn_1person);
@@ -46,7 +44,34 @@ public class yeab_app_reserve_person extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 intent = new Intent(yeab_app_reserve_person.this, yeab_app_reserve_seat_page1.class);
-                if(timeResA = true){
+
+                if(rt_time_A != null){
+                    intent.putExtra("code_rt_time_A", "A");
+                }
+                else if(rt_time_B != null){
+                    intent.putExtra("code_rt_time_B", "B");
+                }
+                else if(rt_time_C != null){
+                    intent.putExtra("code_rt_time_C", "C");
+                }
+                else if(rt_time_D != null){
+                    intent.putExtra("code_rt_time_D", "D");
+                }
+
+                /*if("A" == t_resCodeTimeA.getText()){
+                    intent.putExtra("code_rt_time_A", "A");
+                }
+                else if("B" == t_resCodeTimeB.getText()){
+                    intent.putExtra("code_rt_time_B", "B");
+                }
+                else if("C" == t_resCodeTimeC.getText()){
+                    intent.putExtra("code_rt_time_C", "C");
+                }
+                else if("D" == t_resCodeTimeD.getText()){
+                    intent.putExtra("code_rt_time_D", "D");
+                }*/ // 오류 1
+
+                /*if(timeResA = true){
                     intent.putExtra("code_rt_time_A", "A");
                 }
                 else if(timeResB = true){
@@ -55,12 +80,12 @@ public class yeab_app_reserve_person extends AppCompatActivity {
                 else if(timeResC = true){
                     intent.putExtra("code_rt_time_C", "C");
                 }
-                else{
+                else {
                     intent.putExtra("code_rt_time_D", "D");
-                }
+                }*/ // 오류 2
+
                 startActivity(intent);
             }
-
         });
 
         btn_2person = findViewById(R.id.btn_2person);
