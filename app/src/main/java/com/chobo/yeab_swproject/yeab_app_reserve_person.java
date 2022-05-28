@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 public class yeab_app_reserve_person extends AppCompatActivity {
 
+    String testA = "A";
     boolean timeResA, timeResB, timeResC, timeResD;
     Intent intent;
     Button btn_1person, btn_2person, btn_3person;
@@ -45,21 +46,18 @@ public class yeab_app_reserve_person extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 intent = new Intent(yeab_app_reserve_person.this, yeab_app_reserve_seat_page1.class);
-                /*if (v.getId() == R.id.btn_timeA){
+                if(timeResA = true){
                     intent.putExtra("code_rt_time_A", "A");
                 }
-                /*if(timeResA = true){
-                    intent.putExtra("code_rt_time_A", "A");
-                }
-                if(timeResB = true){
+                else if(timeResB = true){
                     intent.putExtra("code_rt_time_B", "B");
                 }
-                if(timeResC = true){
+                else if(timeResC = true){
                     intent.putExtra("code_rt_time_C", "C");
                 }
-                if(timeResD = true){
+                else{
                     intent.putExtra("code_rt_time_D", "D");
-                }*/
+                }
                 startActivity(intent);
             }
 
