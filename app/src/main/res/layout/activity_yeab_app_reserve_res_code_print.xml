@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -23,7 +22,8 @@
     <!--중첩 리니어 레이아웃을 사용해 한 줄에 표시될 수 있게끔 구현-->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
 
         <!--선택한 시간대가 출력될 자리(29~63)-->
         <TextView
@@ -62,11 +62,12 @@
             android:textSize="25dp"
             android:text=""/>
 
-        <!--선택한 인원수가 출력될 자리(66~90)-->
+        <!--선택한 인원수가 출력될 자리(66~91)-->
         <TextView
             android:id="@+id/t_resPerson1"
             android:layout_width="20dp"
             android:layout_height="40dp"
+            android:layout_marginLeft="3dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -84,17 +85,18 @@
             android:id="@+id/t_resPerson3"
             android:layout_width="20dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-20dp"
+            android:layout_marginLeft="-21dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
 
-        <!--yeab_app_reserve_seat_page1에서 선택한 좌석 출력(93~342)-->
+        <!--yeab_app_reserve_seat_page1에서 선택한 좌석 출력(94~344)-->
         <TextView
         android:id="@+id/t_printSeat_page1_1"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginTop="200dp"
+        android:layout_marginLeft="3dp"
         android:textSize="25dp"
         android:text=""/>
 
@@ -102,7 +104,7 @@
             android:id="@+id/t_printSeat_page1_2"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-41dp"
+            android:layout_marginLeft="-40dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -129,7 +131,7 @@
             android:id="@+id/t_printSeat_page1_26"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-41dp"
+            android:layout_marginLeft="-40dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -147,7 +149,7 @@
             android:id="@+id/t_printSeat_page1_66"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-40dp"
+            android:layout_marginLeft="-41dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -156,7 +158,7 @@
             android:id="@+id/t_printSeat_page1_86"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-41dp"
+            android:layout_marginLeft="-40dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -165,7 +167,7 @@
             android:id="@+id/t_printSeat_page1_15"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-40dp"
+            android:layout_marginLeft="-41dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -174,7 +176,7 @@
             android:id="@+id/t_printSeat_page1_35"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-41dp"
+            android:layout_marginLeft="-40dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -210,7 +212,7 @@
             android:id="@+id/t_printSeat_page1_44"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-41dp"
+            android:layout_marginLeft="-40dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -219,7 +221,7 @@
             android:id="@+id/t_printSeat_page1_64"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-40dp"
+            android:layout_marginLeft="-41dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -228,7 +230,7 @@
             android:id="@+id/t_printSeat_page1_84"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-41dp"
+            android:layout_marginLeft="-40dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -264,7 +266,7 @@
             android:id="@+id/t_printSeat_page1_73"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-41dp"
+            android:layout_marginLeft="-40dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -273,7 +275,7 @@
             android:id="@+id/t_printSeat_page1_22"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-40dp"
+            android:layout_marginLeft="-41dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -282,7 +284,7 @@
             android:id="@+id/t_printSeat_page1_42"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-41dp"
+            android:layout_marginLeft="-40dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -318,7 +320,7 @@
             android:id="@+id/t_printSeat_page1_31"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-41dp"
+            android:layout_marginLeft="-40dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -327,7 +329,7 @@
             android:id="@+id/t_printSeat_page1_51"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-40dp"
+            android:layout_marginLeft="-41dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -336,31 +338,23 @@
             android:id="@+id/t_printSeat_page1_71"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-41dp"
+            android:layout_marginLeft="-40dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
 
-        <!--yeab_app_reserve_seat_page2에서 선택한 좌석 출력(345~594)-->
+        <!--yeab_app_reserve_seat_page2에서 선택한 좌석 출력(347~597)-->
         <TextView
             android:id="@+id/t_printSeat_page2_1"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginTop="200dp"
+            android:layout_marginLeft="3dp"
             android:textSize="25dp"
             android:text=""/>
 
         <TextView
             android:id="@+id/t_printSeat_page2_2"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="-41dp"
-            android:layout_marginTop="200dp"
-            android:textSize="25dp"
-            android:text=""/>
-
-        <TextView
-            android:id="@+id/t_printSeat_page2_3"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="-40dp"
@@ -369,10 +363,19 @@
             android:text=""/>
 
         <TextView
-            android:id="@+id/t_printSeat_page2_4"
+            android:id="@+id/t_printSeat_page2_3"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="-41dp"
+            android:layout_marginTop="200dp"
+            android:textSize="25dp"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/t_printSeat_page2_4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="-40dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -417,7 +420,7 @@
             android:id="@+id/t_printSeat_page2_15"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-40dp"
+            android:layout_marginLeft="-41dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -435,7 +438,7 @@
             android:id="@+id/t_printSeat_page2_55"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-41dp"
+            android:layout_marginLeft="-40dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -444,7 +447,7 @@
             android:id="@+id/t_printSeat_page2_75"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-40dp"
+            android:layout_marginLeft="-41dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -462,7 +465,7 @@
             android:id="@+id/t_printSeat_page2_44"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-41dp"
+            android:layout_marginLeft="-40dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -489,7 +492,7 @@
             android:id="@+id/t_printSeat_page2_13"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-41dp"
+            android:layout_marginLeft="-40dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -498,7 +501,7 @@
             android:id="@+id/t_printSeat_page2_33"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-40dp"
+            android:layout_marginLeft="-41dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -507,7 +510,7 @@
             android:id="@+id/t_printSeat_page2_53"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-41dp"
+            android:layout_marginLeft="-40dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -543,7 +546,7 @@
             android:id="@+id/t_printSeat_page2_62"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-41dp"
+            android:layout_marginLeft="-40dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -552,7 +555,7 @@
             android:id="@+id/t_printSeat_page2_82"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-40dp"
+            android:layout_marginLeft="-41dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -561,7 +564,7 @@
             android:id="@+id/t_printSeat_page2_11"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-41dp"
+            android:layout_marginLeft="-40dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -593,11 +596,12 @@
             android:textSize="25dp"
             android:text=""/>
 
-        <!--yeab_app_reserve_seat_page3에서 선택한 좌석 출력(597~846)-->
+        <!--yeab_app_reserve_seat_page3에서 선택한 좌석 출력(600~850)-->
         <TextView
             android:id="@+id/t_printSeat_page3_1"
             android:layout_width="40dp"
             android:layout_height="40dp"
+            android:layout_marginLeft="3dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -606,7 +610,7 @@
             android:id="@+id/t_printSeat_page3_2"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-41dp"
+            android:layout_marginLeft="-40dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -615,7 +619,7 @@
             android:id="@+id/t_printSeat_page3_3"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-40dp"
+            android:layout_marginLeft="-41dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -624,7 +628,7 @@
             android:id="@+id/t_printSeat_page3_4"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-41dp"
+            android:layout_marginLeft="-40dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -660,7 +664,7 @@
             android:id="@+id/t_printSeat_page3_86"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-41dp"
+            android:layout_marginLeft="-40dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -669,7 +673,7 @@
             android:id="@+id/t_printSeat_page3_15"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-40dp"
+            android:layout_marginLeft="-41dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -678,7 +682,7 @@
             android:id="@+id/t_printSeat_page3_35"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-41dp"
+            android:layout_marginLeft="-40dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -687,7 +691,7 @@
             android:id="@+id/t_printSeat_page3_55"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-41dp"
+            android:layout_marginLeft="-40dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -696,7 +700,7 @@
             android:id="@+id/t_printSeat_page3_75"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-40dp"
+            android:layout_marginLeft="-41dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -714,7 +718,7 @@
             android:id="@+id/t_printSeat_page3_44"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-41dp"
+            android:layout_marginLeft="-40dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -741,7 +745,7 @@
             android:id="@+id/t_printSeat_page3_13"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-41dp"
+            android:layout_marginLeft="-40dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -750,7 +754,7 @@
             android:id="@+id/t_printSeat_page3_33"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-40dp"
+            android:layout_marginLeft="-41dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -759,7 +763,7 @@
             android:id="@+id/t_printSeat_page3_53"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-41dp"
+            android:layout_marginLeft="-40dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -795,7 +799,7 @@
             android:id="@+id/t_printSeat_page3_62"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-41dp"
+            android:layout_marginLeft="-40dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -804,7 +808,7 @@
             android:id="@+id/t_printSeat_page3_82"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-40dp"
+            android:layout_marginLeft="-41dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>
@@ -813,7 +817,7 @@
             android:id="@+id/t_printSeat_page3_11"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="-41dp"
+            android:layout_marginLeft="-40dp"
             android:layout_marginTop="200dp"
             android:textSize="25dp"
             android:text=""/>

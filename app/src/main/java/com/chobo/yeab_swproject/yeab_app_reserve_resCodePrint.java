@@ -10,6 +10,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class yeab_app_reserve_resCodePrint extends AppCompatActivity {
 
+    // 처음부터 끝까지 '민예인' 작성
+
+    /*변수 선언*/
     Intent intent;
     Button btn_quit;
 
@@ -18,10 +21,13 @@ public class yeab_app_reserve_resCodePrint extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_yeab_app_reserve_res_code_print);
 
+        /*yeab_app_reserve_person에서 무슨 시간대를 전달했는지 모르니까 다 전달받음*/
         intent = getIntent();
         String rt_time_A = intent.getStringExtra("code_rt_time_A");
+        /*코드를 사용해 'A' 값을 전달받고 그 값을 String rt_time_A에 저장*/
         TextView t_resCodeTimeA = findViewById(R.id.t_resCodeTimeA);
         t_resCodeTimeA.setText(rt_time_A);
+        /*A타임이 출력될 텍스트뷰 자리 t_resCodeTimeA에 'A' 값을 저장한 rt_time_A을 출력*/
 
         intent = getIntent();
         String rt_time_B = intent.getStringExtra("code_rt_time_B");
@@ -38,10 +44,13 @@ public class yeab_app_reserve_resCodePrint extends AppCompatActivity {
         TextView t_resCodeTimeD = findViewById(R.id.t_resCodeTimeD);
         t_resCodeTimeD.setText(rt_time_D);
 
+        /*yeab_app_reserve_person에서 인원수 몇 명을 선택했는지 모르니까 다 전달받음*/
         intent = getIntent();
         String rs_person1 = intent.getStringExtra("code_person1");
+        /*코드를 사용해 '1' 값을 전달받고 그 값을 String rs_person1에 저장*/
         TextView t_resPerson1 = findViewById(R.id.t_resPerson1);
         t_resPerson1.setText(rs_person1);
+        /*1명이 출력될 텍스트뷰 자리 t_resPerson1에 '1' 값을 저장한 rs_person1을 출력*/
 
         intent = getIntent();
         String rs_person2 = intent.getStringExtra("code_person2");
@@ -53,10 +62,13 @@ public class yeab_app_reserve_resCodePrint extends AppCompatActivity {
         TextView t_resPerson3 = findViewById(R.id.t_resPerson3);
         t_resPerson3.setText(rs_person3);
 
+        /*yeab_app_reserve_seat1에서 어디 좌석을 선택했는지 모르니까 다 전달받음*/
         intent = getIntent();
         String seat_page1_1 = intent.getStringExtra("code_seat_page1_1");
+        /*코드를 사용해 '1' 값을 전달받고 그 값을 String seat_page1_1에 저장*/
         TextView t_printSeat_page1_1 = findViewById(R.id.t_printSeat_page1_1);
         t_printSeat_page1_1.setText(seat_page1_1);
+        /*1이 출력될 텍스트뷰 자리 t_printSeat_page1_1에 '1' 값을 저장한 seat_page1_1을 출력*/
 
         intent = getIntent();
         String seat_page1_2 = intent.getStringExtra("code_seat_page1_2");
@@ -479,6 +491,7 @@ public class yeab_app_reserve_resCodePrint extends AppCompatActivity {
         TextView t_printSeat_page3_71 = findViewById(R.id.t_printSeat_page3_71);
         t_printSeat_page3_71.setText(seat_page3_71);
 
+        /*종료 버튼(누르면 yeab_app_main_01로 넘어감)*/
         btn_quit = findViewById(R.id.btn_quit);
         btn_quit.setOnClickListener(new View.OnClickListener() {
             @Override

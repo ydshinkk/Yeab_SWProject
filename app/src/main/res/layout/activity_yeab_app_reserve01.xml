@@ -65,8 +65,6 @@ yeab에서는 이 데이터를 개인정보로 취급합니다. 최대 2달동�
         android:layout_marginLeft="4dp"
         android:text="위의 약관을 모두 동의함"/>
 
-    <!--체크박스 선택을 완료해야 다음 페이지로 전환 가능-->
-    <!--현재 구현 X-->
     <CheckBox
         android:id="@+id/cb_personal2"
         android:layout_width="wrap_content"
@@ -74,8 +72,6 @@ yeab에서는 이 데이터를 개인정보로 취급합니다. 최대 2달동�
         android:layout_marginLeft="4dp"
         android:text="yeab 어플 서비스 약관에 동의함"/>
 
-    <!--체크박스 선택을 완료해야 다음 페이지로 전환 가능-->
-    <!--현재 구현 X-->
     <CheckBox
         android:id="@+id/cb_personal3"
         android:layout_width="wrap_content"
