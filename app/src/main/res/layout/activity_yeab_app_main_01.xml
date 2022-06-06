@@ -8,6 +8,9 @@
     android:gravity="center_horizontal"
     tools:context=".yeab_app_main_01">
 
+    <!--처음부터 끝까지 '민예인' 작성-->
+
+    <!--로고 이미지뷰-->
     <ImageView
         android:id="@+id/i_bwuLogo"
         android:layout_width="160dp"
@@ -15,6 +18,7 @@
         android:layout_marginTop="80dp"
         app:srcCompat="@mipmap/ic_launcher_round"/>
 
+    <!--좌석 예약 버튼-->
     <Button
         android:id="@+id/btn_reservation"
         android:layout_width="200dp"
@@ -24,12 +28,15 @@
         android:textSize="25dp"
         android:backgroundTint="#3F51B5"/>
 
+    <!--중첩 리니어 레이아웃 사용으로 한 줄에 표시되게끔 만듦-->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="10dp">
 
+        <!--현재 사용 중인 인원수-->
+        <!--현재 구현 X-->
         <TextView
             android:id="@+id/t_numOfPeople1"
             android:layout_width="26dp"
@@ -38,6 +45,7 @@
             android:textColor="@color/purple_700"
             android:textSize="33dp"/>
 
+        <!--최대 수용 가능한 인원수-->
         <TextView
             android:id="@+id/t_numOfPeople2"
             android:layout_width="72dp"
@@ -48,6 +56,8 @@
 
     </LinearLayout>
 
+    <!--사용인원/전체인원 비율을 보고 원활, 보통, 혼잡 띄워줌-->
+    <!--현재 구현 X-->
     <TextView
         android:id="@+id/t_density"
         android:layout_width="wrap_content"
@@ -57,6 +67,8 @@
         android:textColor="@color/teal_700"
         android:textSize="14dp"/>
 
+    <!--혼잡도 새로고침 버튼-->
+    <!--현재 구현 X-->
     <ImageView
         android:id="@+id/i_refresh"
         android:layout_width="100dp"

@@ -15,6 +15,9 @@ import java.util.ArrayList;
 
 public class yeab_app_reserve_02 extends AppCompatActivity {
 
+    // 처음부터 끝까지 '장채원' 작성
+
+    /*변수 선언*/
     EditText et_phoneNumber;
     ImageButton Ibtn_before;
     ImageButton Ibtn_next;
@@ -23,7 +26,6 @@ public class yeab_app_reserve_02 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_yeab_app_reserve02);
-
 
         et_phoneNumber = findViewById(R.id.et_phoneNumber);
 
@@ -63,10 +65,6 @@ public class yeab_app_reserve_02 extends AppCompatActivity {
                         }
                     }
                 }
-
-
-
-
             }
         });
 
